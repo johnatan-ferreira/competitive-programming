@@ -1,3 +1,9 @@
+/**
+* Problema: 2670 - Máquina de Café
+* Link: https://judge.beecrowd.com/pt/problems/view/2670
+* Linguagem: C++
+*/
+
 #include <algorithm>
 #include <iostream>
 

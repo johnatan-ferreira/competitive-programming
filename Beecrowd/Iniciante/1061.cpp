@@ -1,3 +1,9 @@
+/**
+* Problema: 1061 - Tempo de um Evento
+* Link: https://judge.beecrowd.com/pt/problems/view/1061
+* Linguagem: C++
+*/
+
 #include <iostream>
 
 using namespace std;
