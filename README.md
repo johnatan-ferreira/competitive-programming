@@ -25,5 +25,6 @@ Este repositório centraliza as minhas resoluções de problemas de algoritmos, 
 | 1009 | Salário com Bônus   | [Acessar](https://judge.beecrowd.com/pt/problems/view/1009) | [Ver Código](./Beecrowd/Iniciante/1009.c) |
 | 1010 | Cálculo Simples     | [Acessar](https://judge.beecrowd.com/pt/problems/view/1010) | [Ver Código](./Beecrowd/Iniciante/1010.c) |
 | 1011 | Esfera              | [Acessar](https://judge.beecrowd.com/pt/problems/view/1011) | [Ver Código](./Beecrowd/Iniciante/1011.c) |
+| 1012 | Área                | [Acessar](https://judge.beecrowd.com/pt/problems/view/1012) | [Ver Código](./Beecrowd/Iniciante/1012.c) |
 | 1061 | Tempo de um Evento  | [Acessar](https://judge.beecrowd.com/pt/problems/view/1061) | [Ver Código](./Beecrowd/Iniciante/1061.cpp) |
 | 2670 | Máquina de Café     | [Acessar](https://judge.beecrowd.com/pt/problems/view/2670) | [Ver Código](./Beecrowd/Iniciante/2670.cpp) |
