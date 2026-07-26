@@ -1,6 +1,6 @@
 /**
 * Problema: 1073 - Quadrado de Pares
-* Link: https://judge.beecrowd.com/pt/problems/view/1045
+* Link: https://judge.beecrowd.com/pt/problems/view/1073
 * Linguagem: C
 */
 
