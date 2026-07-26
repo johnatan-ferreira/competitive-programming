@@ -4,4 +4,4 @@ Esse repositório contém minhas soluções de problemas de algoritmos de plataf
 
 ## Progresso Geral
 
-* **Beecrowd:** Mais de 30 problemas resolvidos ([Ir para a pasta](./Beecrowd/))
+* **Beecrowd:** Mais de 60 problemas resolvidos ([Ir para a pasta](./Beecrowd/))
