@@ -1,0 +1,15 @@
+# Pastas de build geradas pelo CMake / CLion
+cmake-build-*/
+.cmake/
+
+# Configurações específicas da IDE CLion
+.idea/
+
+# Ignorar o main.cpp e o CMakeLists.txt da raiz
+main.cpp
+CMakeLists.txt
+
+# Binários e executáveis compilados (caso apareçam na raiz)
+*.exe
+*.out
+*.o
