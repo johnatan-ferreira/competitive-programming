@@ -1,3 +1,5 @@
+//código em andamento
+
 #include <cstdint>
 #include <iostream>
 #include <vector>
