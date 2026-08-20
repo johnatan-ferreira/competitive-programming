@@ -1,9 +1,5 @@
-//programa não concluído. lógica errada
-
-#include <cmath>
 #include <cstdint>
 #include <iostream>
-#include <math.h>
 #include <vector>
 
 using namespace std;
@@ -11,25 +7,39 @@ using namespace std;
 int main() {
     int n;
 
-    uint64_t x;
+    vector<uint64_t> tab = {2, 3};
 
-    vector<int> tab = {2, 3, 5, 7};
+    uint64_t x;
 
     while (cin >> n) {
         for (int i = 0; i < n; i++) {
             cin >> x;
 
-            int flag = 0;
+            int flag = 1;
 
             for (int j = 0; j < tab.size(); j++) {
                 if (x == tab[j]) {
+                    cout << "Prime" << endl;
                     flag = 0;
                     break;
                 }
+            }
 
-                int raiz = round(sqrt(x)); //"round" arredonda o resultado pro inteiro mais próximo
+            if (flag == 0) {
+                continue;
+            }
 
-                if ((x == 1) || (x % tab[j] == 0) || (raiz * raiz == x)) {
+            flag = 0;
+
+            for (int i = 0; i < tab.size(); i++) {
+                if (x % tab[i] == 0) {
+                    flag = 1;
+                    break;
+                }
+            }
+
+            for (int i = tab[tab.size() - 1]; i < x; i = i + 2) {
+                if (x % i == 0) {
                     flag = 1;
                     break;
                 }
@@ -37,7 +47,9 @@ int main() {
 
             if (flag == 0) {
                 cout << "Prime" << endl;
-            } else {
+                tab[tab.size()] = x;
+            }
+            else {
                 cout << "Not Prime" << endl;
             }
         }
