@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 
 using namespace std;
@@ -26,6 +27,13 @@ int main() {
                 tam = s[i].size();
             }
         }
+
+        auto fim = unique(s->begin(), s->end(), [](char a, char b) {
+
+            return a == ' ' && b == ' ';
+        });
+
+        s->erase(fim, s->end());
 
         for (int i = 0; i < n; i++) {
 
