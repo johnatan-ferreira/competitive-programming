@@ -1,59 +1,40 @@
-//código em andamento
-
-#include <cstdint>
 #include <iostream>
-#include <vector>
+#include <cmath>
 
 using namespace std;
 
+bool isPrime(long long x) {
+    if (x <= 1) return false;
+    if (x == 2) return true;
+    if (x % 2 == 0) return false;
+
+    long long limit = sqrt(x);
+    for (long long i = 3; i <= limit; i += 2) {
+        if (x % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
     int n;
-
-    vector<uint64_t> tab = {2, 3};
-
-    uint64_t x;
-
     while (cin >> n) {
-        for (int i = 0; i < n; i++) {
+        while (n--) {
+            long long x;
             cin >> x;
 
-            int flag = 1;
-
-            for (int j = 0; j < tab.size(); j++) {
-                if (x == tab[j]) {
-                    cout << "Prime" << endl;
-                    flag = 0;
-                    break;
-                }
-            }
-
-            if (flag == 0) {
-                continue;
-            }
-
-            flag = 0;
-
-            for (int i = 0; i < tab.size(); i++) {
-                if (x % tab[i] == 0) {
-                    flag = 1;
-                    break;
-                }
-            }
-
-            for (int i = tab[tab.size() - 1]; i < x; i = i + 2) {
-                if (x % i == 0) {
-                    flag = 1;
-                    break;
-                }
-            }
-
-            if (flag == 0) {
-                cout << "Prime" << endl;
-                tab[tab.size()] = x;
+            if (isPrime(x)) {
+                cout << "Prime\n";
             }
             else {
-                cout << "Not Prime" << endl;
+                cout << "Not Prime\n";
             }
         }
     }
+
+    return 0;
 }
