@@ -13,3 +13,7 @@ CMakeLists.txt
 *.exe
 *.out
 *.o
+
+# Ignora arquivos sem extensão apenas dentro da pasta X
+9 - SQL/*
+!9 - SQL/*.*
