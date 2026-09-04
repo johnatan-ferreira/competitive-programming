@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS customers(
+	id INT PRIMARY KEY,
+	name VARCHAR(100),
+	street VARCHAR(100),
+	city VARCHAR(100)
+);
+
+INSERT INTO customers(id, name, street, city)
+VALUES 	(1, 'Giovanna Goncalves Oliveira', 'Rua Mato Grosso', 'Canoas'),
+		(2, 'Kauã Azevedo Ribeiro', 'Travessa Ibiá', 'Uberlândia'),
+		(3, 'Rebeca Barbosa Santos', 'Rua Observatório Meteorológico', 'Salvador'),
+		(4, 'Sarah Carvalho Correia', 'Rua Antônio Carlos da Silva', 'Uberlândia'),
+		(5, 'João Almeida Lima', 'Rua Rio Taiuva', 'Ponta Grossa'),
+		(6, 'Diogo Melo Dias', 'Rua Duzentos e Cinqüenta', 'Várzea Grande');
+
+SELECT city
+FROM customers
+GROUP BY city;
